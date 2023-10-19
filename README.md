@@ -2,6 +2,14 @@
 
 <div style="text-align:center;">
   <img src="static/images/suimon.png" alt="Image Description" width="1000"/>
+<p align="center">
+  <a href="https://github.com/bartosian/suimon/releases/latest">
+    <img alt="GitHub release" src="https://img.shields.io/github/v/release/bartosian/suimon.svg?logo=github&style=flat-square">
+  </a>
+  <a href="https://goreportcard.com/report/github.com/bartosian/suimon">
+    <img src="https://goreportcard.com/badge/github.com/bartosian/suimon" alt="Go Report Card">
+  </a>
+</p>
 </div>
 
 `Suimon` is a powerful command line tool designed to provide detailed dashboards for monitoring the SUI network. With Suimon, you can easily monitor your nodes' and validators' health and performance and track important system states and events in real time.
@@ -124,6 +132,29 @@ Building and installing from the source is useful if you want to customize the c
 
    - For each network that you want to connect to, create a separate YAML file with the naming convention `suimon-<network>.yaml` and put it in the `.suimon` directory. For example, if you want to connect to the mainnet, you can create a file called `suimon-mainnet.yaml` and put it in the `.suimon` directory.
 
+## Installation using Homebrew
+
+For macOS users, suimon can be seamlessly installed using the Homebrew package manager. Please adhere to the subsequent steps to facilitate the installation.
+
+1. **Tap into the Repository**
+
+   - To access the necessary formulae for the installation, you'll need to first tap into our repository:
+     ```
+     brew tap bartosian/tools
+     ```
+
+2. **Initiate the Installation**
+
+   - With the repository tapped, proceed to install Suimon:
+     ```
+     brew install suimon
+     ```
+
+3. **Post-installation Configuration**
+
+   - Following the installation, it's essential to set up the suimon configuration file. Detailed instructions for this setup are provided in the subsequent section of this document.
+     Upon completion of these steps, suimon will be configured and ready for use on your macOS system.
+  
 ## Suimon Configuration Files
 
 `Suimon` uses configuration files to manage settings and defaults for different environments and networks. The default configuration file for the Suimon tool is `suimon-testnet.yaml`, which is located in the `~/.suimon` directory. However, you can use multiple configuration files to manage settings for different networks and environments.
